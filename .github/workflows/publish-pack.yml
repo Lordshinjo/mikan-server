@@ -1,0 +1,23 @@
+name: Publish Server Pack
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Zip content and upload
+        run: |
+          zip -r Mikan_Server.zip minecraft/ instance.cfg mmc-pack.json
+          gh release upload latest Mikan_Server.zip
+    env:
+      GITHUB_TOKEN: ${{ github.TOKEN }}
