@@ -1,0 +1,17 @@
+filename = 'accessories_compat_layer-neoforge-0.1.9+1.21.1.jar'
+name = 'Accessories Compatibility Layer'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'Accessories Compatibility Layer 0.1.9 [Neoforge]'
+
+[download]
+hash = '14bc2757608b5a8acb448d5fcb3efb8a448d26a7'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7005354
+project-id = 1315611

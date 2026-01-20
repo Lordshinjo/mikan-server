@@ -1,0 +1,17 @@
+filename = 'AdHooks-1.21.1-11.1.0.3-NeoForge-build.0491.jar'
+name = 'Advanced Hook Launchers'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'AdHooks-1.21.1-11.1.0.3-NeoForge-build.0491.jar'
+
+[download]
+hash = '39e1647bc7e3105fdb6a3dbbce86267d5b721686'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7095115
+project-id = 244849
