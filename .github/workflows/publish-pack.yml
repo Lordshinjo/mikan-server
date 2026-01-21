@@ -18,6 +18,7 @@ jobs:
       - name: Zip content and upload
         run: |
           zip -r Mikan_Server.zip minecraft/ instance.cfg mmc-pack.json
-          gh release create latest Mikan_Server.zip --clobber
+          gh release delete latest
+          gh release create latest Mikan_Server.zip
     env:
       GITHUB_TOKEN: ${{ github.TOKEN }}
