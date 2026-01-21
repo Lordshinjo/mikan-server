@@ -1,1 +1,4 @@
 .DS_Store
+Mikan_Server.zip
+minecraft/servers.dat_old
+minecraft/.mixin.out/class/net/minecraft/nbt/CompoundTag.class
