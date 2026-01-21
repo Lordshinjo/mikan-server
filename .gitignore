@@ -1,4 +1,10 @@
+# macOS trash
 .DS_Store
+
+# The zip itself
 Mikan_Server.zip
-minecraft/servers.dat_old
+
+# Generated files that we don't want
 minecraft/.mixin.out/class/net/minecraft/nbt/CompoundTag.class
+minecraft/cache/
+minecraft/servers.dat_old
