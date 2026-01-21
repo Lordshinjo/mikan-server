@@ -15,10 +15,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Zip content and upload
-        run: |
-          zip -r Mikan_Server.zip minecraft/ instance.cfg mmc-pack.json
-          gh release delete latest
-          gh release create latest Mikan_Server.zip
+      - name: Zip server pack
+        run: zip -r Mikan_Server.zip minecraft/ instance.cfg mmc-pack.json
+
+      - name: Delete latest git tag
+        run: git push origin :latest
+        continue-on-error: true
+
+      - name: Delete latest gh release
+        run: gh release delete latest
+        continue-on-error: true
+
+      - name: Upload server pack
+        run: gh release create latest Mikan_Server.zip
     env:
       GITHUB_TOKEN: ${{ github.TOKEN }}
