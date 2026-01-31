@@ -220,7 +220,7 @@ key_key.pointblack.reload:key.keyboard.r
 key_key.pointblack.firemode:key.keyboard.b
 key_key.pointblack.inspect:key.keyboard.i
 key_key.pointblack.attachments:key.keyboard.y
-key_key.pointblack.scope_switch:key.keyboard.v
+key_key.pointblack.scope_switch:key.keyboard.v:SHIFT
 key_accessories.key.open_accessories_screen:key.keyboard.h
 soundCategory_master:1.0
 soundCategory_music:1.0
